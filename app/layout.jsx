@@ -1,6 +1,6 @@
 import React from "react"
 import { Metadata } from "next"
-import { Playfair_Display, Open_Sans } from "next/font/google"
+import { Playfair_Display, Open_Sans, Montserrat } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
@@ -12,6 +12,12 @@ const _playfair = Playfair_Display({
 const _openSans = Open_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
+})
+
+const montserrat = Montserrat({
+  weight: ["400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+  variable: "--font-montserrat",
 })
 
 export const metadata = {
@@ -42,7 +48,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`${_openSans.variable} ${montserrat.variable} antialiased`}>
         {children}
         <Analytics />
       </body>

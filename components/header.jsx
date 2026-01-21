@@ -35,7 +35,7 @@ export function Header() {
       </div>
 
       {/* Main Navigation */}
-      <nav className="bg-white py-4 px-4 md:px-8 flex items-center justify-between shadow-sm">
+      <nav className="bg-[#FDEBC8] py-4 px-4 md:px-8 flex items-center justify-between shadow-sm">
         {/* Logo */}
         <div className="flex items-center">
           <div className="w-16 h-16 rounded-full border-2 border-[#5a3921] flex items-center justify-center p-1">
@@ -51,10 +51,10 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          <Link href="#" className="text-[#5a3921] font-medium hover:text-[#d4a84b] transition-colors">
+          <Link href="/" className="text-[#5a3921] font-medium hover:text-[#d4a84b] transition-colors">
             HOME
           </Link>
-          <Link href="#about" className="text-[#5a3921] font-medium hover:text-[#d4a84b] transition-colors">
+          <Link href="/about" className="text-[#5a3921] font-medium hover:text-[#d4a84b] transition-colors">
             ABOUT US
           </Link>
           <Link href="#products" className="text-[#5a3921] font-medium hover:text-[#d4a84b] transition-colors">
@@ -89,10 +89,10 @@ export function Header() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-t shadow-lg">
           <div className="flex flex-col p-4 gap-4">
-            <Link href="#" className="text-[#5a3921] font-medium py-2 border-b">
+            <Link href="/" className="text-[#5a3921] font-medium py-2 border-b">
               HOME
             </Link>
-            <Link href="#about" className="text-[#5a3921] font-medium py-2 border-b">
+            <Link href="/about" className="text-[#5a3921] font-medium py-2 border-b">
               ABOUT US
             </Link>
             <Link href="#products" className="text-[#5a3921] font-medium py-2 border-b">
