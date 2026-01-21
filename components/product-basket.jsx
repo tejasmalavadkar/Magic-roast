@@ -8,42 +8,42 @@ const products = [
   {
     name: "Timeless Qoffee",
     rating: 4.8,
-    image: "/vintage-coffee-tin-gold-timeless-qoffee-packaging.jpg",
+    image: "/Timeless-tin.png",
   },
   {
     name: "Vanmaya",
     rating: 4.7,
-    image: "/white-coffee-pouch-package-vanmaya-green-design-tr.jpg",
+    image: "/Van maya pouch.png",
   },
   {
     name: "Araku Qoffee",
     rating: 4.9,
-    image: "/brown-coffee-package-araku-qoffee-arabica-parchmen.jpg",
+    image: "/araku-pouch-mockup-008.png",
   },
   {
     name: "Bharat Araku Qoffee",
     rating: 4.6,
-    image: "/white-coffee-package-bharat-araku-design-elegant.jpg",
+    image: "/bharat-araku-pouch.png",
   },
   {
-    name: "Premium Blend",
+    name: "Black Stallion",
     rating: 4.5,
-    image: "/premium-coffee-blend-package-dark-roast.jpg",
+    image: "/Black-Stallion-tin.png",
   },
   {
-    name: "Organic Special",
+    name: "Qoffee Brew",
     rating: 4.8,
-    image: "/organic-coffee-package-green-label-eco.jpg",
+    image: "/qoffee-brew-pouch.png",
   },
   {
-    name: "Classic Roast",
+    name: "Qoffee",
     rating: 4.7,
-    image: "/classic-roast-coffee-package-traditional.jpg",
+    image: "/Qoffee-pouch (2).png",
   },
   {
-    name: "Mountain Fresh",
+    name: "Signature Qoffee",
     rating: 4.6,
-    image: "/mountain-fresh-coffee-package-blue.jpg",
+    image: "/signature-qoffee (2).png",
   },
 ]
 

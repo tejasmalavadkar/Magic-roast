@@ -40,16 +40,11 @@ export function Header() {
         <div className="flex items-center">
           <div className="w-16 h-16 rounded-full border-2 border-[#5a3921] flex items-center justify-center p-1">
             <div className="w-full h-full rounded-full bg-[#f5e6d3] flex items-center justify-center">
-              <div className="text-center">
-                <p className="text-[6px] text-[#5a3921] font-bold leading-none">MAGIC ROAST</p>
-                <div className="w-6 h-6 mx-auto">
-                  <svg viewBox="0 0 40 40" className="w-full h-full">
-                    <circle cx="20" cy="20" r="18" fill="none" stroke="#5a3921" strokeWidth="1" />
-                    <path d="M15 25c0-5 3-8 5-10s5-3 5 2-3 8-5 10-5 3-5-2z" fill="#5a3921" />
-                  </svg>
-                </div>
-                <p className="text-[6px] text-[#5a3921] font-bold leading-none">QOFFEE</p>
-              </div>
+              <img 
+                src="/magicroastlogo.png" 
+                alt="Magic Roast Qoffee Logo" 
+                className="w-full h-full object-contain rounded-full"
+              />
             </div>
           </div>
         </div>
