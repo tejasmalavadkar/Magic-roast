@@ -60,10 +60,10 @@ export function Header() {
           <Link href="#products" className="text-[#5a3921] font-medium hover:text-[#d4a84b] transition-colors">
             SHOP
           </Link>
-          <Link href="#blogs" className="text-[#5a3921] font-medium hover:text-[#d4a84b] transition-colors">
+          <Link href="/blogs" className="text-[#5a3921] font-medium hover:text-[#d4a84b] transition-colors">
             BLOGS
           </Link>
-          <Link href="#contact" className="text-[#5a3921] font-medium hover:text-[#d4a84b] transition-colors">
+          <Link href="/contact" className="text-[#5a3921] font-medium hover:text-[#d4a84b] transition-colors">
             CONTACT
           </Link>
         </div>
@@ -98,10 +98,10 @@ export function Header() {
             <Link href="#products" className="text-[#5a3921] font-medium py-2 border-b">
               SHOP
             </Link>
-            <Link href="#blogs" className="text-[#5a3921] font-medium py-2 border-b">
+            <Link href="/blogs" className="text-[#5a3921] font-medium py-2 border-b">
               BLOGS
             </Link>
-            <Link href="#contact" className="text-[#5a3921] font-medium py-2">
+            <Link href="/contact" className="text-[#5a3921] font-medium py-2">
               CONTACT
             </Link>
           </div>
