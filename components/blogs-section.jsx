@@ -25,19 +25,18 @@ export function BlogsSection() {
 
         <div className="max-w-xl mx-auto">
           <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
-            {/* Image Grid */}
-            <div className="grid grid-cols-2 gap-2 p-4">
-              {blogPost.images.map((image, index) => (
-                <div key={index} className="text-center">
-                  <div className="relative aspect-[3/2] rounded-lg overflow-hidden mb-2">
-                    <Image src={image.src || "/placeholder.svg"} alt={image.name} fill className="object-cover" />
-                  </div>
-                  <p className="text-xs font-semibold text-[#8b4513]">{image.name}</p>
-                  {index < 2 && <span className="text-[#8b4513]">☕</span>}
-                </div>
-              ))}
+            {/* Full-width blog image inside the card */}
+            <div className="relative w-full h-64 md:h-72">
+              <Image 
+                src="/blog.jpg" 
+                alt="Blog Featured Image" 
+                fill 
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
             </div>
-
+                        
             {/* Content */}
             <div className="p-4">
               <div className="flex items-center gap-4 text-sm text-[#6a6a6a] mb-2">
@@ -59,7 +58,7 @@ export function BlogsSection() {
                   {blogPost.category}
                 </span>
                 <Link
-                  href="#"
+                  href="/blog-details"
                   className="flex items-center gap-1 text-[#1a1a1a] font-medium hover:text-[#d4a84b] transition-colors"
                 >
                   Read More <ArrowRight size={16} />

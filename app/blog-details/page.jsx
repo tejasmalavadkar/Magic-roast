@@ -1,5 +1,6 @@
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
+import Link from "next/link";
 
 export default function BlogDetailsPage() {
   return (
@@ -9,22 +10,15 @@ export default function BlogDetailsPage() {
       <main className="flex-grow py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
-            <div class="relative h-80 md:h-[32rem] w-full overflow-hidden rounded-t-2xl">
-              <div class="absolute inset-0 bg-gradient-to-br from-[#f8f0e3]/10 via-transparent to-[#5a3921]/5 z-10"></div>
+            <div className="relative h-80 md:h-[32rem] w-full overflow-hidden rounded-t-2xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#f8f0e3]/10 via-transparent to-[#5a3921]/5 z-10"></div>
               <img 
                 src="/blog.jpg" 
                 alt="Coffee Beans Types" 
-                class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                 loading="lazy"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-              <div className="absolute bottom-8 left-8 z-20">
-                <div className="bg-[#d4a84b]/95 backdrop-blur-md px-5 py-3 rounded-xl shadow-2xl border border-white/30">
-                  <h1 className="text-white font-poppins font-extrabold text-2xl tracking-wide">
-                    Coffee Beans Guide
-                  </h1>
-                </div>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
               <div className="absolute top-6 right-8 z-20">
                 <div className="bg-black/50 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
                   <span className="text-white font-inter font-medium text-sm">Types of Coffee Beans</span>
@@ -60,6 +54,16 @@ export default function BlogDetailsPage() {
                   <strong className="font-poppins">4. Excelsa (Coffea Excelsa)</strong> Global Share: Around 1 percent Altitude Range: 800–1,300 meters Caffeine Level: Moderate Bean Shape: Small and elongated Characteristics Excelsa is technically a variety of Liberica but has distinct flavor qualities. It is valued for adding brightness and depth to blends. Flavor Notes Tart, fruity, wine-like acidity, tropical fruit notes. Where It's Grown Vietnam, Philippines, Southeast Asia. Best Uses Specialty blends, enhancing complexity, medium roasts.
                 </p>
               </div>
+            </div>
+            
+            {/* Back to Blogs button */}
+            <div className="px-8 pb-8">
+              <Link 
+                href="/#blogs"
+                className="inline-flex items-center gap-2 text-[#5a3921] hover:text-[#d4a84b] transition-colors font-medium"
+              >
+                ← Back to Blogs
+              </Link>
             </div>
           </div>
         </div>

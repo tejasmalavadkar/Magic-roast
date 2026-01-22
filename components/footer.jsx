@@ -14,15 +14,17 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8 items-center mb-8">
           {/* Logo */}
           <div className="flex justify-center md:justify-start">
-            <div className="w-20 h-20 rounded-full border-2 border-[#d4a84b] flex items-center justify-center p-1 bg-[#f5e6d3]">
-              <div className="w-full h-full rounded-full flex items-center justify-center">
-                <img 
-                  src="/magicroastlogo.png" 
-                  alt="Magic Roast Qoffee Logo" 
-                  className="w-full h-full object-contain rounded-full"
-                />
+            <Link href="/" className="group">
+              <div className="w-20 h-20 rounded-full border-2 border-[#d4a84b] flex items-center justify-center p-1 bg-[#f5e6d3] transition-all duration-300 group-hover:border-white group-hover:scale-105 group-hover:shadow-xl group-hover:bg-[#fff8eb]">
+                <div className="w-full h-full rounded-full flex items-center justify-center">
+                  <img 
+                    src="/magicroastlogo.png" 
+                    alt="Magic Roast Qoffee Logo" 
+                    className="w-full h-full object-contain rounded-full transition-transform duration-300 group-hover:scale-110"
+                  />
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
 
           {/* Contact Info & Social */}
@@ -37,27 +39,27 @@ export function Footer() {
             <div className="flex justify-center gap-4 mt-6">
               <Link
                 href="#"
-                className="w-12 h-12 rounded-full bg-[#4a3525] flex items-center justify-center hover:bg-[#5a4535] transition-colors"
+                className="w-8 h-8 rounded-full border border-white flex items-center justify-center transition-all duration-300"
               >
-                <Youtube size={20} />
+                <Youtube size={16} className="text-white" />
               </Link>
               <Link
                 href="#"
-                className="w-12 h-12 rounded-full bg-[#4a3525] flex items-center justify-center hover:bg-[#5a4535] transition-colors"
+                className="w-8 h-8 rounded-full border border-white flex items-center justify-center transition-all duration-300"
               >
-                <Instagram size={20} />
+                <Instagram size={16} className="text-white" />
               </Link>
               <Link
                 href="#"
-                className="w-12 h-12 rounded-full bg-[#4a3525] flex items-center justify-center hover:bg-[#5a4535] transition-colors"
+                className="w-8 h-8 rounded-full border border-white flex items-center justify-center transition-all duration-300"
               >
-                <Linkedin size={20} />
+                <Linkedin size={16} className="text-white" />
               </Link>
               <Link
                 href="#"
-                className="w-12 h-12 rounded-full bg-[#4a3525] flex items-center justify-center hover:bg-[#5a4535] transition-colors"
+                className="w-8 h-8 rounded-full border border-white flex items-center justify-center transition-all duration-300"
               >
-                <Facebook size={20} />
+                <Facebook size={16} className="text-white" />
               </Link>
             </div>
           </div>

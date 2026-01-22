@@ -32,11 +32,12 @@ export function AboutSection() {
             </p>
 
             <Link
-              href="#"
-              className="inline-block bg-[#d4a84b] text-white px-8 py-3 rounded-full font-medium hover:bg-[#c49a3f] transition-colors"
+              href="/about"
+              className="inline-block bg-[#d4a84b] text-white px-8 py-3 rounded-full font-medium hover:bg-[#c49a3f] transition-colors mb-8"
             >
               Explore More
             </Link>
+
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 mt-10">

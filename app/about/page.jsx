@@ -1,5 +1,6 @@
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -106,9 +107,9 @@ export default function AboutPage() {
         />
         
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
-          <button className="bg-[#5a3921] text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-[#7a5937] transition-colors duration-300">
+          <Link href="/quality-policy" className="bg-[#5a3921] text-white px-8 py-3 rounded-lg font-montserrat font-semibold hover:bg-[#7a5937] transition-colors duration-300 inline-block">
             View Quality Policy
-          </button>
+          </Link>
         </div>
       </div>
       
