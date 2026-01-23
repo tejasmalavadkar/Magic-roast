@@ -10,7 +10,7 @@ export default function AboutPage() {
       {/* About Us Banner Image */}
       <div className="w-full">
         <img 
-          src="/About Us Final.png" 
+          src="/About-Us-Final.png"
           alt="About Magic Roast Qoffee" 
           className="w-full h-auto object-cover"
         />
@@ -55,7 +55,7 @@ export default function AboutPage() {
             
             <div className="lg:w-1/2 flex items-center justify-center bg-[#f5e6d3] p-6 rounded-lg">
               <img 
-                src="/about us image.png" 
+                src="/about-us-image.png"
                 alt="About Magic Roast Qoffee" 
                 className="max-w-full h-auto object-contain rounded-lg shadow-md"
               />

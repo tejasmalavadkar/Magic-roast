@@ -60,7 +60,7 @@ export default function ShopPage() {
       rating: 4,
       price: "350.00",
       originalPrice: "450.00",
-      image: "/Qoffee-pouch (2).png",
+      image: "/qoffee-pouch-2.png",
       category: "Roasted Qoffee Beans",
       weight: "200 gm"
     },
@@ -90,7 +90,7 @@ export default function ShopPage() {
       rating: 4,
       price: "800.00",
       originalPrice: "900.00",
-      image: "/Van maya pouch.png",
+      image: "/van-maya-pouch.png",
       category: "Green Qoffee Beans",
       weight: "1kg"
     },

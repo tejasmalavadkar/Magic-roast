@@ -54,7 +54,7 @@ export function AboutSection() {
           <div className="flex justify-center">
             <div className="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/about-qoffee-section.jpg"
+                src="/about-qoffee-section.jpg"
                 alt="Magic Roast Qoffee - Coffee cup with logo on coffee beans"
                 fill
                 className="object-cover"

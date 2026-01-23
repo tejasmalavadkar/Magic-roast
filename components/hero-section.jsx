@@ -5,19 +5,19 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const slides = [
   {
-    image: "/images/slider-23.jpg",
+    image: "/slider-23.jpg",
     text: "FRESH PRESCRIPTIVE ON QOFFEE INNOVATIONS",
   },
   {
-    image: "/images/slider-33.jpg",
+    image: "/slider-33.jpg",
     text: "PREMIUM QUALITY COFFEE FROM ARAKU VALLEY",
   },
   {
-    image: "/images/freepic.jpg",
+    image: "/freepic.jpg",
     text: "SUSTAINABLY SOURCED ORGANIC COFFEE",
   },
   {
-    image: "/images/slider-image-33.jpg",
+    image: "/slider-image-33.jpg",
     text: "CRAFTED WITH PASSION AND PRECISION",
   },
 ]
