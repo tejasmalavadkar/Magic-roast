@@ -1,8 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { Link, useNavigate } from "react-router-dom";
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
 
@@ -12,14 +11,14 @@ export default function MyAccountPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
-  const router = useRouter();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const token = localStorage.getItem("token");
     const userData = localStorage.getItem("user");
 
     if (!token || !userData) {
-      router.push("/login");
+      navigate("/login");
       return;
     }
 
@@ -30,7 +29,7 @@ export default function MyAccountPage() {
   const handleLogout = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
-    router.push("/");
+    navigate("/");
   };
 
   if (loading) {

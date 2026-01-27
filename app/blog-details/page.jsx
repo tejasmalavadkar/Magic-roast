@@ -1,6 +1,7 @@
-import { Header } from "../../components/header";
-import { Footer } from "../../components/footer";
-import Link from "next/link";
+import React from "react";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import { Link } from "react-router-dom";
 
 export default function BlogDetailsPage() {
   return (
@@ -59,7 +60,7 @@ export default function BlogDetailsPage() {
             {/* Back to Blogs button */}
             <div className="px-8 pb-8">
               <Link 
-                href="/#blogs"
+                to="/blogs"
                 className="inline-flex items-center gap-2 text-[#5a3921] hover:text-[#d4a84b] transition-colors font-medium"
               >
                 ← Back to Blogs

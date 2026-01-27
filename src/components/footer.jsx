@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { Youtube, Instagram, Linkedin, Facebook, ArrowUp } from "lucide-react"
 
-export function Footer() {
+export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }

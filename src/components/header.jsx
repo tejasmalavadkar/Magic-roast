@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { Instagram, Youtube, Linkedin, Facebook, User, ShoppingCart, Menu, X } from "lucide-react"
 
-export function Header() {
+export default function Header() {
   const router = useNavigate();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [accountMenuOpen, setAccountMenuOpen] = useState(false)

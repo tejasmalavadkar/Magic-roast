@@ -2,7 +2,7 @@
 
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 export default function QualityPolicyPage() {
   return (

@@ -1,13 +1,11 @@
-"use client";
-
-import { Header } from "../../components/header";
-import { Footer } from "../../components/footer";
+import React, { useState, useEffect } from "react";
+import Header from "../components/header";
+import Footer from "../components/footer";
 import { Link, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
 import { Star, Filter, ShoppingCart, Heart, Eye } from "lucide-react";
 
 export default function ShopPage() {
-  const navigate = useNavigate();
+  const router = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState("All Categories");
   const [selectedWeight, setSelectedWeight] = useState(null);
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
@@ -191,7 +189,7 @@ export default function ShopPage() {
       // Store the product in localStorage to add after login
       localStorage.setItem('pendingCartItem', JSON.stringify(product));
       // Redirect to login page
-      navigate('/login');
+      router.push('/login');
       return;
     }
     

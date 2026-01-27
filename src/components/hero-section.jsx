@@ -1,6 +1,4 @@
-"use client"
-
-import { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const slides = [
@@ -22,7 +20,7 @@ const slides = [
   },
 ]
 
-export function HeroSection() {
+export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   useEffect(() => {

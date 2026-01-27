@@ -1,10 +1,7 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { Header } from "../../components/header";
-import { Footer } from "../../components/footer";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 export default function LoginPage() {
   const [formData, setFormData] = useState({
@@ -13,7 +10,7 @@ export default function LoginPage() {
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const router = useRouter();
+  const router = useNavigate();
 
   // Handle Google authentication callback
   useEffect(() => {
@@ -211,7 +208,7 @@ export default function LoginPage() {
                 </div>
                 
                 <Link 
-                  href="/forgot-password" 
+                  to="/forgot-password" 
                   className="text-sm text-[#d4a84b] hover:text-[#c49a3f] transition-colors"
                 >
                   Forgot password?
@@ -231,7 +228,7 @@ export default function LoginPage() {
               <p className="text-[#6a6a6a]">
                 Don't have an account?{" "}
                 <Link 
-                  href="/register" 
+                  to="/register" 
                   className="text-[#d4a84b] font-semibold hover:text-[#c49a3f] transition-colors"
                 >
                   Register here

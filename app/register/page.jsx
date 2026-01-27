@@ -1,8 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { Link, useNavigate } from "react-router-dom";
 import { Header } from "../../components/header";
 import { Footer } from "../../components/footer";
 
@@ -18,7 +17,7 @@ export default function RegisterPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
-  const router = useRouter();
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({
@@ -75,7 +74,7 @@ export default function RegisterPage() {
         
         // Redirect to my account page after 2 seconds
         setTimeout(() => {
-          router.push("/my-account");
+          navigate("/my-account");
         }, 2000);
       } else {
         setError(data.message || "Registration failed");
